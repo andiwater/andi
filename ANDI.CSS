@@ -1,0 +1,92 @@
+body {
+    font-family: 'CAIRO';
+    margin: 0;
+    direction: rtl;
+}
+
+header {
+    background-color: #318bca;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.logo {
+    max-height: 100px; /* Maximum height of the logo */
+    width: auto; /* Ensures the logo's width adjusts accordingly */
+    display: block; /* Ensures proper alignment and spacing */
+    margin: 0 auto; /* Centers the logo horizontally */
+}
+
+/* Adjust the logo size for smaller screens */
+@media screen and (max-width: 768px) {
+    .logo {
+        max-height: 80px; /* Adjust the maximum height for smaller screens */
+    }
+}
+
+/* Adjust the logo size for even smaller screens */
+@media screen and (max-width: 576px) {
+    .logo {
+        max-height: 60px; /* Further adjust the maximum height for very small screens */
+    }
+}
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.whatsapp-float {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 10%; /* Adjust the size as needed */
+    height: auto;
+    cursor: pointer;
+    z-index: 1000;
+}
